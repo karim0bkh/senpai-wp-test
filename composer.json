@@ -1,0 +1,19 @@
+{
+    "name": "wp-senpai/senpai-wp-test",
+    "description": "Composer Senpai Codes WP developer test.",
+    "authors": [
+        {
+            "name": "Amine Safsafi",
+            "email": "amine.safsafi@senpai.codes"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.senpai.codes"
+        }
+    ],
+    "require": {
+        "senpai/wp-senpai": "dev-main"
+    }
+}

@@ -1,0 +1,13 @@
+deny from all
+<FilesMatch "^style\.css$">
+Allow From All
+</FilesMatch>
+<FilesMatch "^senpai-logo\.png$">
+    Allow From All
+</FilesMatch>
+<FilesMatch "^screenshot\.png$">
+    Allow From All
+</FilesMatch>
+<FilesMatch "^debug\.js$">
+    Allow From All
+</FilesMatch>

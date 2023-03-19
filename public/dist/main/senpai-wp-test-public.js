@@ -1,0 +1,2 @@
+/*! For license information please see senpai-wp-test-public.js.LICENSE.txt */
+(()=>{var __webpack_modules__={"./src/public.js":()=>{eval("const {\n  __,\n  _x,\n  _n,\n  _nx\n} = wp.i18n;\njQuery(document).ready(function ($) {\n  console.log('public ready');\n  console.log(senpai_wp_test_public_params);\n});\n\n//# sourceURL=webpack://tw_wp5/./src/public.js?")}},__webpack_exports__={};__webpack_modules__["./src/public.js"]()})();

@@ -1,0 +1,16 @@
+{
+  "name": "senpai-wp-test",
+  "version": "1.0.0",
+  "description": "Senpai Codes WP developer test.",
+  "scripts": {
+    "bundle": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' + && npm run inc_version && cd .. && zip -r senpai-wp-test.zip senpai-wp-test -x '*.git*' -x '*composer.json*' -x '*composer.lock*' -x '*package.json*' -x '*package-lock.json*' -x '/senpai-wp-test/logs/*' -x '*vendor*' && mv senpai-wp-test.zip /mnt/c/Users/senpai/Documents/ ",
+    "inc_version_func": "new_version=$(echo $npm_package_version | awk -F. -v OFS=. '{$NF += 1 ; print}');sed -i \"s/$npm_package_version/$new_version/g\" functions.php",
+    "inc_version_style": "new_version=$(echo $npm_package_version | awk -F. -v OFS=. '{$NF += 1 ; print}');sed -i \"s/$npm_package_version/$new_version/g\" style.css",
+    "inc_version_npm": "new_version=$(echo $npm_package_version | awk -F. -v OFS=. '{$NF += 1 ; print}');sed -i \"s/$npm_package_version/$new_version/g\" package.json",
+    "inc_version_phpdoc": "new_version=$(echo $npm_package_version | awk -F. -v OFS=. '{$NF += 1 ; print}');sed -i \"s/$npm_package_version/$new_version/g\" phpdoc.dist.xml",
+    "inc_version": "npm run inc_version_func && npm run inc_version_style && npm run inc_version_npm && npm run inc_version_phpdoc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
