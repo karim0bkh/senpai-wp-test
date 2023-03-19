@@ -1,5 +1,8 @@
 <h3 align="center">Senpai WP Test</h3>
 
+<p align="left"> Senpai Codes WP developer test.</p>
+<p align="left"> This Theme was generated using <a href="https://github.com/Codes-Senpai/senpai-wp-cli" target="_blank" rel="noreferrer">Senpai WP CLI</a></p>
+
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=codes-senpai&label=Profile%20views&color=0e75b6&style=flat" alt="codes-senpai" /> </p>
 
 <h3 align="left">Connect with me:</h3>
