@@ -10,10 +10,11 @@
 <h3 align="left">How to use:</h3>
 <pre>
   <code>
-    $ cd web-root/wp-content/themes
-    $ git clone git@github.com:Codes-Senpai/senpai-wp-test.git
-    $ cd senpai-wp-test
-    $ composer install
+    cd web-root/wp-content/themes
+    git clone git@github.com:Codes-Senpai/senpai-wp-test.git
+    cd senpai-wp-test
+    code .
+    # start coding...
   </code>
 </pre>
 
