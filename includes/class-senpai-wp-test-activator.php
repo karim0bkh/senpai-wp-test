@@ -89,6 +89,11 @@ class Senpai_Wp_Test_Activator {
 	 * ```
 	 * 
 	 * @link https://developer.wordpress.org/reference/functions/maybe_create_table/
+	 * @link https://developer.wordpress.org/reference/functions/wpdb/
+	 * @link https://developer.wordpress.org/reference/functions/get_charset_collate/
+	 * @link https://developer.wordpress.org/reference/functions/require_once/
+	 * @link https://developer.wordpress.org/reference/functions/abspath/
+	 * 
 	 * @author Amine Safsafi
 	 * @return void
 	 */
