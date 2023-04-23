@@ -89,6 +89,18 @@ class Senpai_Wp_Test {
 	private function load_dependencies() {
 
 		/**
+		 * The class responsible for JSON handler of the theme.
+		 * 
+		 */
+		require_once THEME_DIR . '/includes/class-senpai-wp-test-json.php';
+		
+		/**
+		 * The class responsible for Random String Generator handler of the theme.
+		 * 
+		 */
+		require_once THEME_DIR . '/includes/class-senpai-wp-test-rsg.php';
+
+		/**
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core theme.
 		 */
