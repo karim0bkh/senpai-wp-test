@@ -13,6 +13,10 @@ class Senpai_Wp_Test_Deactivator {
 
 	public static function deactivate() {
 
+		/* global $wpdb;
+		$example_table_name = $wpdb->prefix . "senpai_examples";
+		$wpdb->query( "DROP TABLE IF EXISTS $example_table_name" ); */
+
 	}
 
 }
