@@ -100,6 +100,7 @@ class Senpai_Wp_Test_Activator {
 	public static function init_database_tables(){
 		global $wpdb;
 		$charset_collate = $wpdb->get_charset_collate();
+		// Include Upgrade Script
 		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 
 		/* $example_table_name = $wpdb->prefix . "senpai_examples";
