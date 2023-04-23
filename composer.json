@@ -7,13 +7,5 @@
             "email": "amine.safsafi@senpai.codes"
         }
     ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.senpai.codes"
-        }
-    ],
-    "require": {
-        "senpai/wp-senpai": "dev-main"
-    }
+    "repositories": []
 }

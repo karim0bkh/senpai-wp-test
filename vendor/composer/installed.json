@@ -1,46 +1,5 @@
 {
-    "packages": [
-        {
-            "name": "senpai/wp-senpai",
-            "version": "dev-main",
-            "version_normalized": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:Codes-Senpai/WP_SENPAI.git",
-                "reference": "0c839b526d03d36826983924bc774410e6622866"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Codes-Senpai/WP_SENPAI/zipball/0c839b526d03d36826983924bc774410e6622866",
-                "reference": "0c839b526d03d36826983924bc774410e6622866",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0"
-            },
-            "time": "2023-03-14T00:04:39+00:00",
-            "type": "library",
-            "installation-source": "source",
-            "autoload": {
-                "psr-4": {
-                    "WP_SENPAI\\": "app/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "amine safsafi",
-                    "email": "amine.safsafi@senpai.codes"
-                }
-            ],
-            "description": "Utils collection to help speedup development of wordpress themes and plugins.",
-            "support": {
-                "docs": "https://docs.senpai.codes/wp_senpai/",
-                "source": "https://github.com/Codes-Senpai/WP_SENPAI/tree/main",
-                "issues": "https://github.com/Codes-Senpai/WP_SENPAI/issues"
-            },
-            "install-path": "../senpai/wp-senpai"
-        }
-    ],
+    "packages": [],
     "dev": true,
     "dev-package-names": []
 }
