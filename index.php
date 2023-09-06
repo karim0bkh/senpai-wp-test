@@ -16,14 +16,8 @@
 
 get_header();
 
-if ( have_posts() ) {
-	// Load posts loop.
-	while ( have_posts() ) {
-		the_post();
-		the_content();
-	}
-}else {
+
 	echo "<h1 style='text-align:center;margin-top:150px;'>Silence is golden...</h1>";
-}
+	get_template_part('includes/form', 'test');
 
 get_footer();
