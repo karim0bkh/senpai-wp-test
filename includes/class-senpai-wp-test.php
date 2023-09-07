@@ -251,6 +251,8 @@ class Senpai_Wp_Test {
 
 		$this->loader->add_action( 'admin_notices', $theme_notices,'get_all' );
 		$this->loader->add_action( 'wp_ajax_dashboard_notice_senpai', $theme_notices, 'dissmiss' );
+		$this->loader->add_action('admin_menu', $theme_admin, 'custom_entries_admin_menu');
+
 
 	}
 
@@ -271,7 +273,9 @@ class Senpai_Wp_Test {
 		$this->loader->add_action( 'wp_enqueue_scripts', $theme_public, 'enqueue_scripts' );
 		$this->loader->add_action( 'init', $theme_shortcodes, 'load_shortcodes' );
 		$this->loader->add_action( 'rest_api_init', $theme_apis, 'register_endpoints' );
-
+		$this->loader->add_action('wp_ajax_insert_data', $theme_public, 'insert_data_callback'); // Register for logged-in users
+		$this->loader->add_action('wp_ajax_nopriv_insert_data', $theme_public, 'insert_data_callback'); // Register for all users
+		
 	}
 
 	/**

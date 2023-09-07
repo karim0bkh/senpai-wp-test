@@ -90,23 +90,3 @@ function run_senpai_wp_test() {
 }
 run_senpai_wp_test();
 
-
-function ajax_contact_us(){
-	$arr=[];
-	wp_parse_str($_POST['contact_us'],$arr);
-	print_r($arr);
-	global $wpdb;
-	$table='contact_us';
-	$result=$wpdb->insert($table,[
-		"name"=>$arr['name'],
-		"email"=>$arr['email'],
-		"phone"=>$arr['phone'],
-		"message"=>$arr['message']
-	]);
-	if($result>0){
-		wp_send_json_success("Data inserted");
-	}else{
-		wp_send_json_error("Please try again");
-	}
-}
-add_action('wp_ajax_contact_us','ajax_contact_us');

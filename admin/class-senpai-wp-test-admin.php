@@ -72,4 +72,39 @@ class Senpai_Wp_Test_Admin {
 	
 	}
 
+	function custom_entries_admin_menu() {
+		add_menu_page(
+			'Custom Entries',
+			'Custom Entries',
+			'manage_options',
+			'custom-entries',
+			'custom_entries_page'
+		);
+	}
+
+	function custom_entries_page() {
+		global $wpdb;
+		$table_name = $wpdb->prefix . 'custom_entries';
+		$entries = $wpdb->get_results("SELECT * FROM $table_name");
+	
+		echo '<div class="wrap">';
+		echo '<h2>Custom Entries</h2>';
+		echo '<table class="wp-list-table widefat fixed striped">';
+		echo '<thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Message</th></tr></thead>';
+		echo '<tbody>';
+	
+		foreach ($entries as $entry) {
+			echo '<tr>';
+			echo '<td>' . esc_html($entry->name) . '</td>';
+			echo '<td>' . esc_html($entry->email) . '</td>';
+			echo '<td>' . esc_html($entry->phone) . '</td>';
+			echo '<td>' . esc_html($entry->message) . '</td>';
+			echo '</tr>';
+		}
+	
+		echo '</tbody></table>';
+		echo '</div>';
+	}
+	
+
 }

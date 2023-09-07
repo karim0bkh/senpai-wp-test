@@ -69,5 +69,23 @@ class Senpai_Wp_Test_Public {
 		) );
 
 	}
+	function insert_data_callback() {
+		global $wpdb;
+	
+		$name = sanitize_text_field($_POST['name']);
+		$email = sanitize_email($_POST['email']);
+		$phone = sanitize_text_field($_POST['phone']);
+		$message = sanitize_text_field($_POST['message']);
+	
+		$table_name = $wpdb->prefix . 'custom_entries';
+		$wpdb->insert($table_name, array(
+			'name' => $name,
+			'email' => $email,
+			'phone' => $phone,
+			'message' => $message
+		));
+	
+		wp_send_json_success();
+	}
 
 }

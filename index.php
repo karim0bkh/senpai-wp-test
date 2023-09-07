@@ -18,6 +18,11 @@ get_header();
 
 
 	echo "<h1 style='text-align:center;margin-top:150px;'>Silence is golden...</h1>";
-	get_template_part('includes/form', 'test');
-
+	echo'<form id="contact-form">
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <input type="tel" name="phone" placeholder="Phone">
+    <textarea name="message" placeholder="Message"></textarea>
+    <button type="submit">Submit</button>
+	</form>';
 get_footer();

@@ -101,7 +101,25 @@ class Senpai_Wp_Test_Activator {
 		global $wpdb;
 		$charset_collate = $wpdb->get_charset_collate();
 		// Include Upgrade Script
-		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+		//require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+
+		$table_name = $wpdb->prefix . 'custom_entries';
+
+		if ($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name) {
+			$sql = "CREATE TABLE $table_name (
+				id INT NOT NULL AUTO_INCREMENT,
+				name VARCHAR(255),
+				email VARCHAR(255),
+				phone VARCHAR(15),
+				message TEXT,
+				PRIMARY KEY (id)
+			);";
+	
+			require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+			dbDelta($sql);
+		}
+
+
 
 		/* $example_table_name = $wpdb->prefix . "senpai_examples";
 		$example_sql = "CREATE TABLE $example_table_name (
